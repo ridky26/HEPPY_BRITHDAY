@@ -724,8 +724,8 @@
         for(let i = 0; i < bufferLength; i++) { sum += dataArray[i]; }
         let avg = sum / bufferLength;
         
-        // Threshold sensitivitas (40)
-        if (avg > 40) {
+        // Threshold sensitivitas (30)
+        if (avg > 30) {
            blowOutCandle();
            return;
         }
